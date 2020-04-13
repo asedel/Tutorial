@@ -28,7 +28,7 @@ def checkColors(colordict):
     print("Sorry there are no colors yet")
   elif len(colordict) == 1:
     print("You can have any color like as long as its",
-          str(iter(colordict).begin()))
+          str(next(iter(colordict))))
   else:
     #how big is it?
     print("There are", str(len(colordict)), "colors")
@@ -42,9 +42,9 @@ checkColors(colors)
 def InsertColor(container, name, color):
   container[name]=color
 
-InsertColor( colors, red,    0x990000)
-InsertColor( colors, blue,   0x000099)
-InsertColor( colors, yellow, 0x009900)
+InsertColor( colors, 'red',    0x990000)
+InsertColor( colors, 'blue',   0x000099)
+InsertColor( colors, 'yellow', 0x009900)
 
 checkColors(colors)
 
