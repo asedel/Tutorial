@@ -67,15 +67,17 @@ if 'pink' in colors:
 print("What is your name?")
 name = input()
 print(name + ", what is your quest?")
-x = input()
+x = input(
 print("A noble quest indeed %s" % (name,))
 print("{}, what is your favorite color".format(name))
 choice = input()
 result = colors.get(choice, None)
 if result is not None:
-  print ("{} the color code for that is {}".format(name, result))
+  print ("{} the color code for that is {}".format(name, result)
 else:
-  print ("{}, {}".format(name, "Sorry thats not your favorite color"))
+  print ("{}, {}".format(name, "Sorry thats not your favorite color")
 
 
   #add some more comments here
+  #lets break stuff
+x = foo
